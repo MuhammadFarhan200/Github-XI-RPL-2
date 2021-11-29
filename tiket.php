@@ -122,7 +122,7 @@ if (isset($_POST['submit'])) {
                 <tr>
                     <td>Jumlah yang Harus Dibayar</td>
                     <td>:</td>
-                    <td><?php echo $total?></td>
+                    <td><?php echo "Rp$total"?></td>
                 </tr>
             </table>
         </center>
