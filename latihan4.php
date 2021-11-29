@@ -62,21 +62,24 @@ if (isset($_POST['submit'])) {
             <tr>
                 <td>DEPART</td>
                 <td> : </td>
-                <td><select name="depart" required>
+                <td>
+	        <select name="depart" required>
                     <option value="">--PILIH--</option>
                     <option value="ckg">Jakarta</option>
-				    <option value="srg">Semarang</option>
-				    <option value="plm">Palembang</option>
-			</select></td>
+		    <option value="srg">Semarang</option>
+		    <option value="plm">Palembang</option>
+		</select></td>
             </tr>
             <tr>
                 <td>RETURN</td>
                 <td> : </td>
-                <td><select name="return" required>
+                <td>
+		<select name="return" required>
                     <option value="">--PILIH--</option>
                     <option value="sin">Singapore</option>
-				    <option value="kul">Kuala Lumpur</option>
-			</select></td>
+		    <option value="kul">Kuala Lumpur</option>
+		</select>
+		</td>
             </tr>
             <tr>
                 <td>Jumlah Tiket</td>
