@@ -107,7 +107,7 @@ if (isset($_POST['submit'])) {
         <center>
             <table border="1" cellpadding="5">
                 <tr>
-                    <th colspan="3"><center>Srtuk Pembayaran</center></th>
+                    <th colspan="3"><center>Struk Pembayaran</center></th>
                 </tr>
                 <tr>
                     <td>Jumlah Tiket</td>
