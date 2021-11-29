@@ -64,7 +64,7 @@ if (isset($_POST['submit'])) {
                 <td> : </td>
                 <td>
 	        <select name="depart" required>
-                    <option value="">--PILIH--</option>
+                    <option value="">Pilih</option>
                     <option value="ckg">Jakarta</option>
 		    <option value="srg">Semarang</option>
 		    <option value="plm">Palembang</option>
@@ -75,7 +75,7 @@ if (isset($_POST['submit'])) {
                 <td> : </td>
                 <td>
 		<select name="return" required>
-                    <option value="">--PILIH--</option>
+                    <option value="">Pilih</option>
                     <option value="sin">Singapore</option>
 		    <option value="kul">Kuala Lumpur</option>
 		</select>
@@ -115,9 +115,9 @@ if (isset($_POST['submit'])) {
                 <tr>
                     <td>Jumlah Tiket</td>
                     <td>:</td>
-                    <td>Dewasa (+17) -> <?php echo $dewasa?> Tiket<br>
-                    Anak (+2) <?php echo $anak?> Tiket<br>
-                    Bayi (0-2) <?php echo $bayi?> Tiket<br></td>
+                    <td>Dewasa (+17) = <?php echo $dewasa?> Tiket<br>
+                    Anak (+2) = <?php echo $anak?> Tiket<br>
+                    Bayi (0-2) = <?php echo $bayi?> Tiket<br></td>
                 </tr>
                 <tr>
                     <td>Jumlah yang Harus Dibayar</td>
