@@ -7,7 +7,7 @@
     <title>Array Input</title>
 </head>
 <body>
-<h3>Nama Mahasiswa</h3>
+<h3>Nama</h3>
 <form action="output.php" method="post"><ol>
 <?php
 for ($a=1; $a <=1 ; $a++) {
