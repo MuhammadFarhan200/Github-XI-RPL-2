@@ -1,12 +1,4 @@
-<?php
-if(isset($_POST['proses1'])){
-$d1 = $_POST['d1'];
-$d2 = $_POST['d2'];
-
-
-$luas = 1/2 * $d1 * $d2;
-}
-?>
+                                
 
 <!DOCTYPE html>
 <html>
@@ -42,6 +34,14 @@ $luas = 1/2 * $d1 * $d2;
                                     </td>
                                 </tr>
                             </table>
+                            <?php
+                            if(isset($_POST['proses1'])):
+                            $d1 = $_POST['d1'];
+                            $d2 = $_POST['d2'];
+
+                            $luas = 1/2 * $d1 * $d2;
+                            ?>
+
                             <hr><br>
                             <table align="center">
                                 <style>
@@ -70,6 +70,8 @@ $luas = 1/2 * $d1 * $d2;
                                 </tr>
                             </table>
                             <p align="right"><a href="bangundatar.php" style="text-decoration: none; color: black; border: 1px solid black; background: whitesmoke; border-radius: 2px; padding: 5px">Back</p></a>
+
+                            <?php endif ?>
                         </fieldset>
                     </form>
                 </div>
@@ -78,13 +80,7 @@ $luas = 1/2 * $d1 * $d2;
     </body>
 </html>
 
-<?php
-if(isset($_POST['proses2'])){
-$sisi = $_POST['sisi'];
-
-$kel = 4 * $sisi;
-}
-?>
+                            
 
 <!DOCTYPE html>
 <html>
@@ -113,6 +109,13 @@ $kel = 4 * $sisi;
                                     </td>
                                 </tr>
                             </table>
+                            <?php
+                        if(isset($_POST['proses2'])):
+                            $sisi = $_POST['sisi'];
+
+                            $kel = 4 * $sisi;
+                            ?>
+
                             <hr><br>
                             <table align="center">
                                 <style>
@@ -137,6 +140,8 @@ $kel = 4 * $sisi;
                                 </tr>
                             </table>
                             <p align="right"><a href="bangundatar.php" style="text-decoration: none; color: black; border: 1px solid black; background: whitesmoke; border-radius: 2px; padding: 5px">Back</p></a>
+
+                            <?php endif ?>
                         </fieldset>
                     </form>
                 </div>
