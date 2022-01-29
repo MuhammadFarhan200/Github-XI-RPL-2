@@ -3,7 +3,7 @@
     <head><title>Pemesanan Tiket Online</title></head>
     <body align="center" style="margin-top: 100px;">
         <center>
-        <h2>Pemesanan Tiket Online Kereta Api</h2>
+        <h2>Pemesanan Tiket Online</h2>
         <table cellpadding="5">
         <style>
             th, td {
