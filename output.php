@@ -7,10 +7,10 @@
     <title>Output</title>
 </head>
 <body>
-<h3>Menampilkan Daftar Nama Mahasiswa</h3>
+<h3>Menampilkan Output Array</h3>
 <ol><?php
 $array_mahasiswa = $_POST['mahasiswa'];
-for ($a=1; $a <=1 ; $a++) {
+for ($a=1; $a <=2 ; $a++) {
 echo "<li>".$array_mahasiswa[$a]."</li>";}
 ?></ol>
 </body>
