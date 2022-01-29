@@ -8,7 +8,7 @@
 </head>
 <body>
 <h3>Nama Mahasiswa</h3>
-<form action="mahasiswa.php" method="post"><ol>
+<form action="output.php" method="post"><ol>
 <?php
 for ($a=1; $a <=1 ; $a++) {
 echo "<li> <input type='text' name='mahasiswa[$a]'>";}
