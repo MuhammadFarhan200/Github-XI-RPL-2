@@ -1,12 +1,4 @@
-<?php
-if(isset($_POST['proses'])){
-$jari_jari = $_POST['jari_jari'];
-$hasil1 = 22/7 * $jari_jari * $jari_jari;
-$diameter = $_POST['diameter'];
-$hasil2 = 22/7 * $diameter;
-}
-?>
-
+                        
 <!DOCTYPE html>
 <html>
     <head>
@@ -22,14 +14,14 @@ $hasil2 = 22/7 * $diameter;
                             <h3 style="margin-top: 30px"><b>-- Lingkaran --</b></h3><br>
                             <table align="center">
                                 <tr>
-                                    <td><h5>Masukkan Jari-jari</h4></td>
-                                    <td style="padding: 5px"><h4>:</h5></td>
+                                    <td><h6>Masukkan Jari-jari</h4></td>
+                                    <td style="padding: 5px"><h4>:</h6></td>
                                     <td><input type="number" name="jari_jari">
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><h5>Masukkan Diameter</h4></td>
-                                    <td style="padding: 5px"><h4>:</h5></td>
+                                    <td><h6>Masukkan Diameter</h4></td>
+                                    <td style="padding: 5px"><h4>:</h6></td>
                                     <td><input type="number" name="diameter">
                                     </td>
                                 </tr>
@@ -41,6 +33,14 @@ $hasil2 = 22/7 * $diameter;
                                     </td>
                                 </tr>
                             </table>
+                            <?php
+                        if(isset($_POST['proses'])):
+                            $jari_jari = $_POST['jari_jari'];
+                            $hasil1 = 3.14 * $jari_jari * $jari_jari;
+                            $diameter = $_POST['diameter'];
+                            $hasil2 = 3.14 * $diameter;
+                            ?>
+
                             <hr><br>
                             <table align="center">
                                 <style>
@@ -48,6 +48,15 @@ $hasil2 = 22/7 * $diameter;
                                         text-align: left;
                                     }
                                 </style>
+                                <tr>
+                                    <td><b>- Jari-jari </b></td>
+                                    <td><b>: <?php echo $jari_jari ?></b></td>
+                                </tr>
+                                <tr>
+                                    <td><b>- Diameter</b></td>
+                                    <td><b>: <?php echo $diameter ?></b></td>
+                                </tr>
+                                <tr><td>&nbsp;</td></tr>
                                 <tr><th>- Hasil -</th></tr>
                                 <tr>
                                     <td>Luas</td>
@@ -68,6 +77,8 @@ $hasil2 = 22/7 * $diameter;
                                 </tr>
                             </table>
                             <p align="right"><a href="bangundatar.php" style="text-decoration: none; color: black; border: 1px solid black; background: whitesmoke; border-radius: 2px; padding: 5px">Back</p></a>
+
+                            <?php endif ?>
                         </fieldset>
                     </form>
                 </div>

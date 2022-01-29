@@ -1,9 +1,8 @@
                             
-
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Kalkulator Bangun Datar | Layang-layang</title>
+        <title>Kalkulator Bangun Datar | Jajargenjang</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     </head>
     <body align="center" style="margin-top:100px;">
@@ -12,18 +11,18 @@
                 <div class="col-md-12 py-5">
                     <form method="post">
                         <fieldset align="center" style="border: 1px solid black; padding: 30px; border-radius: 10px;">
-                            <h3 style="margin-top: 30px"><b>-- Luas Layang-layang --</b></h3><br>
+                            <h3 style="margin-top: 30px"><b>-- Luas Jajargenjang --</b></h3><br>
                             <table align="center">
                                 <tr>
-                                    <td><h6>Masukkan Diagonal 1</h4></td>
+                                    <td><h6>Masukkan Sisi Alas</h4></td>
                                     <td style="padding: 5px"><h4>:</h6></td>
-                                    <td><input type="number" name="d1">
+                                    <td><input type="number" name="alas">
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><h6>Masukkan Diagonal 2</h6></td>
+                                    <td><h6>Masukkan Sisi Tinggi</h6></td>
                                     <td style="padding: 5px"><h4>:</h4></td>
-                                    <td><input type="number" name="d2">
+                                    <td><input type="number" name="tinggi">
                                     </td>
                                 </tr>
                                 <tr>
@@ -36,10 +35,10 @@
                             </table>
                             <?php
                         if(isset($_POST['proses1'])):
-                            $d1 = $_POST['d1'];
-                            $d2 = $_POST['d2'];
+                            $alas = $_POST['alas'];
+                            $tinggi = $_POST['tinggi'];
 
-                            $luas = 1/2 * $d1 * $d2;
+                            $luas = $alas * $tinggi;
                             ?>
 
                             <hr><br>
@@ -50,12 +49,12 @@
                                     }
                                 </style>
                                 <tr>
-                                    <td><b>Diagonal 1</b></td>
-                                    <td><b>: <?php echo $d1 ?></b></td>
+                                    <td><b>Alas</b></td>
+                                    <td><b>: <?php echo $alas ?></b></td>
                                 </tr>
                                 <tr>
-                                    <td><b>Diagonal 2</b></td>
-                                    <td><b>: <?php echo $d2 ?></b></td>
+                                    <td><b>Tinggi</b></td>
+                                    <td><b>: <?php echo $tinggi ?></b></td>
                                 </tr>
                                 <tr><td>&nbsp;</td></tr>
                                 <tr><th>- Hasil -</th></tr>
@@ -66,12 +65,12 @@
                                 <tr><th>- Rumus -</th></tr>
                                 <tr>
                                     <td>Luas</td>
-                                    <td>: 1/2 × Diagonal 1 × Diagonal 2</td>
+                                    <td>: Alas × Tinggi</td>
                                 </tr>
                             </table>
                             <p align="right"><a href="bangundatar.php" style="text-decoration: none; color: black; border: 1px solid black; background: whitesmoke; border-radius: 2px; padding: 5px">Back</p></a>
 
-                            <?php endif ?>
+                           <?php endif ?>
                         </fieldset>
                     </form>
                 </div>
@@ -93,7 +92,7 @@
                 <div class="col-md-12 py-5">
                     <form method="post">
                         <fieldset align="center" style="border: 1px solid black; padding: 30px; border-radius: 10px;">
-                            <h3 style="margin-top: 30px"><b>-- Keliling Layang-layang --</b></h3><br>
+                            <h3 style="margin-top: 30px"><b>-- Keliling Jajargenjang --</b></h3><br>
                             <table align="center">
                                 <tr>
                                     <td><h6>Masukkan Sisi A</h4></td>
@@ -152,7 +151,7 @@
                             </table>
                             <p align="right"><a href="bangundatar.php" style="text-decoration: none; color: black; border: 1px solid black; background: whitesmoke; border-radius: 2px; padding: 5px">Back</p></a>
 
-                            <?php endif ?>
+                           <?php endif ?>
                         </fieldset>
                     </form>
                 </div>

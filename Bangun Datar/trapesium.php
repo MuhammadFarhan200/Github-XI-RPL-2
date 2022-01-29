@@ -1,12 +1,4 @@
-<?php
-if(isset($_POST['proses1'])){
-$alas1 = $_POST['alas1'];
-$alas2 = $_POST['alas2'];
-$tinggi = $_POST['tinggi'];
-
-$luas = 1/2 * ($alas1 + $alas2) * $tinggi;
-}
-?>
+                            
 
 <!DOCTYPE html>
 <html>
@@ -49,6 +41,15 @@ $luas = 1/2 * ($alas1 + $alas2) * $tinggi;
                                     </td>
                                 </tr>
                             </table>
+                            <?php
+                        if(isset($_POST['proses1'])):
+                            $alas1 = $_POST['alas1'];
+                            $alas2 = $_POST['alas2'];
+                            $tinggi = $_POST['tinggi'];
+
+                            $luas = 1/2 * ($alas1 + $alas2) * $tinggi;
+                            ?>
+
                             <hr><br>
                             <table align="center">
                                 <style>
@@ -81,6 +82,8 @@ $luas = 1/2 * ($alas1 + $alas2) * $tinggi;
                                 </tr>
                             </table>
                             <p align="right"><a href="bangundatar.php" style="text-decoration: none; color: black; border: 1px solid black; background: whitesmoke; border-radius: 2px; padding: 5px">Back</p></a>
+
+                            <?php endif ?>
                         </fieldset>
                     </form>
                 </div>
@@ -89,16 +92,7 @@ $luas = 1/2 * ($alas1 + $alas2) * $tinggi;
     </body>
 </html>
 
-<?php
-if(isset($_POST['proses2'])){
-$a = $_POST['a'];
-$b = $_POST['b'];
-$c = $_POST['c'];
-$d = $_POST['b'];
-
-$kel = $a + $b + $c + $d;
-}
-?>
+                            
 
 <!DOCTYPE html>
 <html>
@@ -145,6 +139,16 @@ $kel = $a + $b + $c + $d;
                                     </td>
                                 </tr>
                             </table>
+                            <?php
+                        if(isset($_POST['proses2'])):
+                            $a = $_POST['a'];
+                            $b = $_POST['b'];
+                            $c = $_POST['c'];
+                            $d = $_POST['b'];
+
+                            $kel = $a + $b + $c + $d;
+                            ?>
+
                             <hr><br>
                             <table align="center">
                                 <style>
@@ -181,6 +185,8 @@ $kel = $a + $b + $c + $d;
                                 </tr>
                             </table>
                             <p align="right"><a href="bangundatar.php" style="text-decoration: none; color: black; border: 1px solid black; background: whitesmoke; border-radius: 2px; padding: 5px">Back</p></a>
+
+                            <?php endif ?>
                         </fieldset>
                     </form>
                 </div>

@@ -1,11 +1,3 @@
-<?php
-if(isset($_POST['proses'])){
-$sisi = $_POST['sisi'];
-
-$hasil1 = $sisi * $sisi;
-$hasil2 = 4 * $sisi;
-}
-?>
 
 <!DOCTYPE html>
 <html>
@@ -22,7 +14,7 @@ $hasil2 = 4 * $sisi;
                             <h3 style="margin-top: 30px"><b>-- Persegi --</b></h3><br>
                             <table align="center">
                                 <tr>
-                                    <td><h5>Masukkan Nilai Sisi : </h5></td>
+                                    <td><h6>Masukkan Nilai Sisi : </h6></td>
                                     <td style="padding: 5px">
                                         <input type="number" name="sisi">
                                     </td>
@@ -34,6 +26,14 @@ $hasil2 = 4 * $sisi;
                                     </td>
                                 </tr>
                             </table>
+                            <?php
+                        if(isset($_POST['proses'])):
+                            $sisi = $_POST['sisi'];
+
+                            $hasil1 = $sisi * $sisi;
+                            $hasil2 = 4 * $sisi;
+                            ?>
+
                             <hr><br>
                             <table align="center">
                                 <style>
@@ -41,6 +41,11 @@ $hasil2 = 4 * $sisi;
                                         text-align: left;
                                     }
                                 </style>
+                                <tr>
+                                    <td><b>- Nilai Sisi</b></td>
+                                    <td><b>: <?php echo $sisi ?></b></td>
+                                </tr>
+                                <tr><td>&nbsp;</td></tr>
                                 <tr><th>- Hasil -</th></tr>
                                 <tr>
                                     <td>Luas</td>
@@ -61,6 +66,7 @@ $hasil2 = 4 * $sisi;
                                 </tr>
                             </table>
                             <p align="right"><a href="bangundatar.php" style="text-decoration: none; color: black; border: 1px solid black; background: whitesmoke; border-radius: 2px; padding: 5px">Back</p></a>
+                            <?php endif ?>
                         </fieldset>
                     </form>
                 </div>

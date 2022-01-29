@@ -1,14 +1,4 @@
-<?php
-if(isset($_POST['proses'])){
-$alas = $_POST['alas'];
-$tinggi = $_POST['tinggi'];
-
-
-$hasil1 = 0.5 * $alas * $tinggi;
-$hasil2 = $alas * $tinggi;
-}
-?>
-
+                            
 <!DOCTYPE html>
 <html>
     <head>
@@ -24,13 +14,13 @@ $hasil2 = $alas * $tinggi;
                             <h3 style="margin-top: 30px"><b>-- Segitiga --</b></h3><br>
                             <table align="center">
                                 <tr>
-                                    <td><h5>Masukkan Sisi Alas</h4></td>
-                                    <td style="padding: 5px"><h4>:</h5></td>
+                                    <td><h6>Masukkan Sisi Alas</h4></td>
+                                    <td style="padding: 5px"><h4>:</h6></td>
                                     <td><input type="number" name="alas">
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><h5>Masukkan Sisi Tinggi</h5></td>
+                                    <td><h6>Masukkan Sisi Tinggi</h6></td>
                                     <td style="padding: 5px"><h4>:</h4></td>
                                     <td><input type="number" name="tinggi">
                                     </td>
@@ -43,6 +33,15 @@ $hasil2 = $alas * $tinggi;
                                     </td>
                                 </tr>
                             </table>
+                            <?php
+                        if(isset($_POST['proses'])):
+                            $alas = $_POST['alas'];
+                            $tinggi = $_POST['tinggi'];
+
+                            $hasil1 = 0.5 * $alas * $tinggi;
+                            $hasil2 = $alas * $tinggi;
+                            ?>
+
                             <hr><br>
                             <table align="center">
                                 <style>
@@ -50,6 +49,15 @@ $hasil2 = $alas * $tinggi;
                                         text-align: left;
                                     }
                                 </style>
+                                <tr>
+                                    <td><b>- Alas </b></td>
+                                    <td><b>: <?php echo $alas ?></b></td>
+                                </tr>
+                                <tr>
+                                    <td><b>- Tinggi</b></td>
+                                    <td><b>: <?php echo $tinggi ?></b></td>
+                                </tr>
+                                <tr><td>&nbsp;</td></tr>
                                 <tr><th>- Hasil -</th></tr>
                                 <tr>
                                     <td>Luas</td>
@@ -70,6 +78,8 @@ $hasil2 = $alas * $tinggi;
                                 </tr>
                             </table>
                             <p align="right"><a href="bangundatar.php" style="text-decoration: none; color: black; border: 1px solid black; background: whitesmoke; border-radius: 2px; padding: 5px">Back</p></a>
+
+                            <?php endif ?>
                         </fieldset>
                     </form>
                 </div>

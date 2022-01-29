@@ -1,14 +1,4 @@
-<?php
-if(isset($_POST['proses'])){
-$panjang = $_POST['panjang'];
-$lebar = $_POST['lebar'];
-
-
-$hasil1 = $panjang * $lebar;
-$hasil2 = 2 * ($panjang + $lebar);
-}
-?>
-
+                            
 <!DOCTYPE html>
 <html>
     <head>
@@ -24,13 +14,13 @@ $hasil2 = 2 * ($panjang + $lebar);
                             <h3 style="margin-top: 30px"><b>-- Persegi Panjang --</b></h3><br>
                             <table align="center">
                                 <tr>
-                                    <td><h5>Masukkan Nilai Panjang</h4></td>
-                                    <td style="padding: 5px"><h4>:</h5></td>
+                                    <td><h6>Masukkan Nilai Panjang</h4></td>
+                                    <td style="padding: 5px"><h4>:</h6></td>
                                     <td><input type="number" name="panjang">
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><h5>Masukkan Nilai Lebar</h5></td>
+                                    <td><h6>Masukkan Nilai Lebar</h6></td>
                                     <td style="padding: 5px"><h4>:</h4></td>
                                     <td><input type="number" name="lebar">
                                     </td>
@@ -43,6 +33,15 @@ $hasil2 = 2 * ($panjang + $lebar);
                                     </td>
                                 </tr>
                             </table>
+                            <?php
+                        if(isset($_POST['proses'])):
+                            $panjang = $_POST['panjang'];
+                            $lebar = $_POST['lebar'];
+
+                            $hasil1 = $panjang * $lebar;
+                            $hasil2 = 2 * ($panjang + $lebar);
+                            ?>
+
                             <hr><br>
                             <table align="center">
                                 <style>
@@ -50,6 +49,15 @@ $hasil2 = 2 * ($panjang + $lebar);
                                         text-align: left;
                                     }
                                 </style>
+                                <tr>
+                                    <td><b>- Panjang </b></td>
+                                    <td><b>: <?php echo $panjang ?></b></td>
+                                </tr>
+                                <tr>
+                                    <td><b>- Lebar</b></td>
+                                    <td><b>: <?php echo $lebar ?></b></td>
+                                </tr>
+                                <tr><td>&nbsp;</td></tr>
                                 <tr><th>- Hasil -</th></tr>
                                 <tr>
                                     <td>Luas</td>
@@ -70,6 +78,7 @@ $hasil2 = 2 * ($panjang + $lebar);
                                 </tr>
                             </table>
                             <p align="right"><a href="bangundatar.php" style="text-decoration: none; color: black; border: 1px solid black; background: whitesmoke; border-radius: 2px; padding: 5px">Back</p></a>
+                            <?php endif ?>
                         </fieldset>
                     </form>
                 </div>
