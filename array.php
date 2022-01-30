@@ -10,7 +10,7 @@
 <h3>Nama</h3>
 <form action="output.php" method="post"><ol>
 <?php
-for ($a=1; $a <=1 ; $a++) {
+for ($a=1; $a <=2 ; $a++) {
 echo "<li> <input type='text' name='mahasiswa[$a]'>";}
 ?>
 </ol><input type="submit" value=" Oke " /></form>
